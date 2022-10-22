@@ -4,8 +4,8 @@ from albumentations.pytorch import ToTensorV2
 
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 torch.cuda.empty_cache()
-TRAIN_DIR = "C:\\Users\\mario\\Desktop\\UNI\\Tesi_magistrale\\GANs\\CycleGAN_SMD\\dataset_CT_cycle\\TRAIN"
-VAL_DIR = "C:\\Users\\mario\\Desktop\\UNI\\Tesi_magistrale\\GANs\\CycleGAN_SMD\\dataset_CT_cycle\\TEST"
+TRAIN_DIR = "folder\\TRAIN"
+VAL_DIR = "folder\\TEST"
 BATCH_SIZE = 1
 LEARNING_RATE = 2e-4
 LAMBDA_IDENTITY = 0.0
