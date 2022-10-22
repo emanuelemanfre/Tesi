@@ -17,8 +17,8 @@ def PSNR(original, compressed):
 
 
 def main():
-    path_real = "C:\\Users\\mario\\Desktop\\UNI\\Tesi_magistrale\\GANs\\metriche\\images\\IR_real\\pilot_boat (3).jpg"
-    path_fake = "C:\\Users\\mario\\Desktop\\UNI\\Tesi_magistrale\\GANs\\metriche\\images\\IR_real\\pilot_boat (3).jpg"
+    path_real = "image_real.jpg"
+    path_fake = "image_fake.png"
     original = cv2.imread(path_real)
     compressed = cv2.imread(path_fake, 1)
     value = PSNR(original, compressed)
