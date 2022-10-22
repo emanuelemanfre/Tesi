@@ -2,8 +2,8 @@
 from skimage.metrics import structural_similarity as ssim
 import imutils
 import cv2
-path_real = "images/VIS_real/speedboat (18).jpg"
-path_fake = 'images/VIS_fake/speedboat(18).png'
+path_real = "image_real.jpg"
+path_fake = 'image_fake.png'
 imageA = cv2.imread(path_real)
 imageA = cv2.resize(imageA, (128, 128))
 imageB = cv2.imread(path_fake)
